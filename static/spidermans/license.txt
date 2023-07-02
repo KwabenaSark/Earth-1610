@@ -1,0 +1,11 @@
+Model Information:
+* title:	Miles Morales Updated Version
+* source:	https://sketchfab.com/3d-models/miles-morales-updated-version-50c9b6160b9741718ee558a94c51dab3
+* author:	CVRxEarth (https://sketchfab.com/CVRxEarth)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Miles Morales Updated Version" (https://sketchfab.com/3d-models/miles-morales-updated-version-50c9b6160b9741718ee558a94c51dab3) by CVRxEarth (https://sketchfab.com/CVRxEarth) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
