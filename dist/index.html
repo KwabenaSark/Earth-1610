@@ -33,7 +33,7 @@
             </p>
             <p><strong>Director:</strong>Kwabena Sarkodieh</p>
           </div>
-          <div class="buy_ticket" onclick="window.location.href='parker.html'">
+          <div class="buy_ticket" id="nextButton">
             <a href="#">
               <span>START</span>
               <span
@@ -225,5 +225,15 @@
         width: 25px;
       }
     </style>
+    <script>
+      // Get a reference to the button element
+      var nextButton = document.getElementById("nextButton");
+      console.log("working");
+      // Add an event listener to the button
+      nextButton.addEventListener("click", function () {
+        // Redirect the user to the next page
+        window.location.href = "parker.html";
+      });
+    </script>
   </body>
 </html>
