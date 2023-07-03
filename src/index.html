@@ -1,238 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>25 - Realistic render</title>
+    <title>EARTH - 1610</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <audio autoplay loop>
-      <source src="song.mp3" type="audio/mpeg" />
-    </audio>
+    <div id="Dontshow">
+      <audio autoplay loop id="dontshowAudio">
+        <source src="song.mp3" type="audio/mpeg" />
+      </audio>
 
-    <div class="background_6">
-      <div class="imdb_card">
-        <div class="movie_poster">
-          <div class="movie_label">
-            <h2>EARTH - 1610</h2>
+      <div class="background_6">
+        <div class="imdb_card">
+          <div class="movie_poster">
+            <div class="movie_label">
+              <h2>EARTH - 1610</h2>
+            </div>
           </div>
-        </div>
-        <div class="movie_content">
-          <div class="mov_specs">
-            <i class="material-icons">star</i>
-            <p>8.5 | 1h 57min | Animation, Action, Adventure</p>
-          </div>
-          <div class="mov_description">
-            <h3>Storytine</h3>
-            <p style="width: 15rem">
-              I was inspired to build this full rgb games after speeding out of
-              the mind blowing cliff hanger of Spider man , so i decided to
-              build my own across the spider-man experience,
-            </p>
-            <p><strong>Director:</strong>Kwabena Sarkodieh</p>
-          </div>
-          <div class="buy_ticket" id="nextButton">
-            <a href="#">
-              <span>START</span>
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36.746"
-                  height="36.746"
-                  viewBox="0 0 36.746 36.746"
-                >
-                  <g
-                    id="noun_Ticket_2216149"
-                    transform="translate(-21.611 16.192) rotate(-45)"
+          <div class="movie_content">
+            <div class="mov_specs">
+              <i class="material-icons">star</i>
+              <p>8.5 | 1h 57min | Animation, Action, Adventure</p>
+            </div>
+            <div class="mov_description">
+              <h3>Storytine</h3>
+              <p style="width: 15rem">
+                I was inspired to build this full rgb games after speeding out
+                of the mind blowing cliff hanger of Spider man , so i decided to
+                build my own across the spider-man experience,
+              </p>
+              <p><strong>Director:</strong>Kwabena Sarkodieh</p>
+            </div>
+            <div class="buy_ticket" id="nextButton">
+              <a href="#">
+                <span>START</span>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36.746"
+                    height="36.746"
+                    viewBox="0 0 36.746 36.746"
                   >
-                    <path
-                      id="Trazado_1000"
-                      data-name="Trazado 1000"
-                      d="M44.461,38.067v-4.4a3.867,3.867,0,0,1,0-7.7v-4.4h-11.6V25.51a.377.377,0,1,1-.754,0V21.562H9v4.4a3.867,3.867,0,0,1,0,7.7v4.4H32.107V34.12a.377.377,0,0,1,.754,0v3.948ZM32.484,32.354a.377.377,0,0,1-.377-.377V27.652a.377.377,0,1,1,.754,0v4.325A.377.377,0,0,1,32.484,32.354Z"
-                      fill="#f5c518"
-                    />
-                  </g>
-                </svg>
-              </span>
-            </a>
+                    <g
+                      id="noun_Ticket_2216149"
+                      transform="translate(-21.611 16.192) rotate(-45)"
+                    >
+                      <path
+                        id="Trazado_1000"
+                        data-name="Trazado 1000"
+                        d="M44.461,38.067v-4.4a3.867,3.867,0,0,1,0-7.7v-4.4h-11.6V25.51a.377.377,0,1,1-.754,0V21.562H9v4.4a3.867,3.867,0,0,1,0,7.7v4.4H32.107V34.12a.377.377,0,0,1,.754,0v3.948ZM32.484,32.354a.377.377,0,0,1-.377-.377V27.652a.377.377,0,1,1,.754,0v4.325A.377.377,0,0,1,32.484,32.354Z"
+                        fill="#f5c518"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        #Dontshow{
+            width: 100%;
+          height: 100%;
+        }
+        html {
+          width: 100%;
+          height: 100%;
+        }
+
+        body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          font-family: Roboto;
+          position: relative;
+        }
+
+        .background_6 {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(black, #408bed, #fb0abe);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 0;
+        }
+
+        .imdb_card {
+          width: 90%;
+          height: 100%;
+          background: #010105;
+          border-radius: 2px;
+          color: #ffffff;
+          position: relative;
+          border-radius: 1rem;
+        }
+
+        .movie_poster {
+          width: 100%;
+          height: 350px;
+          position: relative;
+        }
+
+        .movie_poster img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          object-position: top;
+        }
+
+        .movie_label {
+          position: absolute;
+          bottom: -37.5px;
+          background: #8e0800;
+          color: white;
+          width: 100%;
+          height: 75px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 30px;
+          display: grid;
+          place-items: center;
+        }
+
+        .movie_label h2,
+        .movie_label h4 {
+          margin: 0;
+        }
+
+        .movie_label h2 {
+          font-size: 28px;
+          margin-top: -3px;
+        }
+
+        .movie_label h4 {
+          font-size: 13px;
+          font-weight: 400;
+        }
+
+        .movie_content {
+          width: 100%;
+          height: calc(100% - 350px);
+          padding: 45px 40px 0 30px;
+        }
+
+        .mov_specs {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          font-size: 10px;
+        }
+
+        .mov_specs i {
+          font-size: 16px;
+          margin-right: 8px;
+          color: #ffd014;
+        }
+
+        .mov_specs p {
+          white-space: pre;
+        }
+
+        .mov_description {
+          font-size: 0.7rem;
+          font-weight: 300;
+        }
+
+        .mov_description h3 {
+          margin-top: 6px;
+        }
+
+        .buy_ticket {
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 24px;
+        }
+
+        .buy_ticket a {
+          display: flex;
+          align-items: center;
+          background: #8e0800;
+          color: #f5c518;
+          text-decoration: none;
+          width: 210px;
+          height: 45px;
+          transition: 0.3s ease-in-out;
+          border-radius: 2rem;
+        }
+
+        .buy_ticket a:hover {
+          background: #b10000;
+          color: white;
+        }
+
+        .buy_ticket a span:first-child {
+          width: calc(100% - 60px);
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: 1rem;
+        }
+
+        .buy_ticket a span:last-child {
+          width: 60px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 2px dashed #121212;
+        }
+
+        .buy_ticket a span:last-child svg {
+          width: 25px;
+        }
+      </style>
     </div>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+    <div id="Showme" style="display: none">
+      <audio autoplay loop id="showmeAudio">
+        <source src="rickroll.mp3" type="audio/mpeg" />
+      </audio>
+      <canvas class="webgl"></canvas>
+      <script type="module" src="./script.js"></script>
+    </div>
 
-      html {
-        width: 100%;
-        height: 100%;
-      }
-
-      body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        font-family: Roboto;
-        position: relative;
-      }
-
-      .background_6 {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(black, #408bed, #fb0abe);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0;
-      }
-
-      .imdb_card {
-        width: 90%;
-        height: 100%;
-        background: #010105;
-        border-radius: 2px;
-        color: #ffffff;
-        position: relative;
-        border-radius: 1rem;
-      }
-
-      .movie_poster {
-        width: 100%;
-        height: 350px;
-        position: relative;
-      }
-
-      .movie_poster img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        object-position: top;
-      }
-
-      .movie_label {
-        position: absolute;
-        bottom: -37.5px;
-        background: #8e0800;
-        color: white;
-        width: 100%;
-        height: 75px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 30px;
-        display: grid;
-        place-items: center;
-      }
-
-      .movie_label h2,
-      .movie_label h4 {
-        margin: 0;
-      }
-
-      .movie_label h2 {
-        font-size: 28px;
-        margin-top: -3px;
-      }
-
-      .movie_label h4 {
-        font-size: 13px;
-        font-weight: 400;
-      }
-
-      .movie_content {
-        width: 100%;
-        height: calc(100% - 350px);
-        padding: 45px 40px 0 30px;
-      }
-
-      .mov_specs {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        font-size: 10px;
-      }
-
-      .mov_specs i {
-        font-size: 16px;
-        margin-right: 8px;
-        color: #ffd014;
-      }
-
-      .mov_specs p {
-        white-space: pre;
-      }
-
-      .mov_description {
-        font-size: 0.7rem;
-        font-weight: 300;
-      }
-
-      .mov_description h3 {
-        margin-top: 6px;
-      }
-
-      .buy_ticket {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 24px;
-      }
-
-      .buy_ticket a {
-        display: flex;
-        align-items: center;
-        background: #8e0800;
-        color: #f5c518;
-        text-decoration: none;
-        width: 210px;
-        height: 45px;
-        transition: 0.3s ease-in-out;
-        border-radius: 2rem;
-      }
-
-      .buy_ticket a:hover {
-        background: #b10000;
-        color: white;
-      }
-
-      .buy_ticket a span:first-child {
-        width: calc(100% - 60px);
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 1rem;
-      }
-
-      .buy_ticket a span:last-child {
-        width: 60px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-left: 2px dashed #121212;
-      }
-
-      .buy_ticket a span:last-child svg {
-        width: 25px;
-      }
-    </style>
     <script>
-      // Get a reference to the button element
-      var nextButton = document.getElementById("nextButton");
-      console.log("working");
-      // Add an event listener to the button
-      nextButton.addEventListener("click", function () {
-        // Redirect the user to the next page
-        window.location.href = "parker.html";
+            var nextButton = document.getElementById("nextButton");
+            var showmeDiv = document.getElementById("Showme");
+            var dontshowDiv = document.getElementById("Dontshow");
+            var showmeAudio = document.getElementById("showmeAudio");
+            var dontshowAudio = document.getElementById("dontshowAudio");
+
+
+            dontshowAudio.play();
+            showmeAudio.pause();
+      nextButton.addEventListener("click", function() {
+        dontshowAudio.pause();
+        showmeAudio.play();
+        showmeDiv.style.display = "block";
+        dontshowDiv.style.display = "none";
       });
+
+      showmeDiv.addEventListener("click", function() {
+       
+       
+      });
+
+      dontshowDiv.addEventListener("click", function() {
+        
+       
+      });
+        
+
+
+          
     </script>
   </body>
 </html>
